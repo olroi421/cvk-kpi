@@ -1,0 +1,9 @@
+/* Додаткові стилі */
+.md-header {
+  background-color: var(--md-primary-fg-color);
+}
+
+/* Кастомні кольори для статусів */
+.status-active { color: #4caf50; }
+.status-planning { color: #ff9800; }
+.status-completed { color: #2196f3; }
