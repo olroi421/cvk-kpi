@@ -1,0 +1,73 @@
+site_name: Робочий Дашборд Команди
+site_description: Централізоване місце для всіх робочих матеріалів
+site_author: Ваше Ім'я
+site_url: https://yourusername.github.io/your-repo-name
+
+# Репозиторій
+repo_name: yourusername/your-repo-name
+repo_url: https://github.com/yourusername/your-repo-name
+
+# Тема
+theme:
+  name: material
+  language: uk
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.share
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Перемкнути на темну тему
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Перемкнути на світлу тему
+
+# Навігація
+nav:
+  - Головна: index.md
+  - Проекти:
+    - projects/index.md
+    - Проект Alpha: projects/project-alpha.md
+    - Проект Beta: projects/project-beta.md
+  - Ресурси:
+    - resources/index.md
+    - Інструменти: resources/tools.md
+    - Керівництва: resources/guidelines.md
+  - Команда:
+    - team/index.md
+    - Контакти: team/contacts.md
+
+# Плагіни
+plugins:
+  - search:
+      lang: uk
+  - awesome-pages
+
+# Розширення Markdown
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+
+# Додаткові CSS/JS
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername
