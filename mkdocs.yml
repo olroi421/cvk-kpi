@@ -10,9 +10,10 @@ repo_url: https://github.com/yourusername/your-repo-name
 # Тема
 theme:
   name: material
+  favicon: material/robot-confused
   language: uk
   icon:
-    logo: material/cellphone
+    logo: material/robot-confused
   features:
     - navigation.tabs
     - navigation.sections
