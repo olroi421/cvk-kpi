@@ -8,7 +8,7 @@
 - m,m,m,m,m,m,m,kkpkpkp
 
 ### :fontawesome-regular-face-laugh-wink: Корисні ресурси
-- [Інструменти команди](resources/tools.md)
+- [Інструменти команди :fontawesome-solid-download:](resources/tools.md)
 - [Керівництва та стандарти](resources/guidelines.md)
 
 ### 👥 Команда
