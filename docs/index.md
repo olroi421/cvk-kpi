@@ -24,3 +24,9 @@
 - 📊 [Аналітика](https://analytics.example.com)
 - 📝 [Confluence](https://confluence.example.com)
 - 🎯 [Jira](https://jira.example.com)
+
+
+```mermaid
+flowchart TD
+    A --> B
+```
