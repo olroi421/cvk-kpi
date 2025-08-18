@@ -64,22 +64,7 @@ theme:
 # ===== НАВІГАЦІЯ (можна залишити простою - sidebar згенерується автоматично) =====
 nav:
   - Головна: index.md
-  - ОПП:
-      - pages/opp/index.md
-      - Документи: pages/opp/documents.md
-      - Процедури: pages/opp/procedures.md
-  - Проекти:
-      - projects/index.md
-      - Поточні: projects/current.md
-      - Завершені: projects/completed.md
-  - Команда:
-      - team/index.md
-      - Контакти: team/contacts.md
-      - Ролі: team/roles.md
-  - Ресурси:
-      - resources/index.md
-      - Шаблони: resources/templates.md
-      - Інструкції: resources/guides.md
+  - ОПП: opp.md
 
 # Плагіни
 plugins:
