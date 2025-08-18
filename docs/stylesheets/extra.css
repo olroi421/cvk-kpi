@@ -1,9 +1,29 @@
-/* Додаткові стилі */
-.md-header {
-  background-color: var(--md-primary-fg-color);
+/* Два стовпчики з CSS Grid */
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
 }
 
-/* Кастомні кольори для статусів */
-.status-active { color: #4caf50; }
-.status-planning { color: #ff9800; }
-.status-completed { color: #2196f3; }
+.two-columns-wide {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Лівий стовпчик ширший */
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.column {
+    background: var(--md-code-bg-color);
+    padding: 16px;
+    border-radius: 8px;
+    border-left: 3px solid var(--md-primary-fg-color);
+}
+
+/* Адаптивність для мобільних */
+@media (max-width: 768px) {
+    .two-columns,
+    .two-columns-wide {
+        grid-template-columns: 1fr;
+    }
+}
