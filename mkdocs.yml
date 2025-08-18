@@ -48,14 +48,8 @@ theme:
 # Навігація
 nav:
   - Головна: index.md
-  - Проекти:
-      - projects/index.md
-      - Проект Alpha: projects/project-alpha.md
-      - Проект Beta: projects/project-beta.md
-  - Ресурси:
-      - resources/index.md
-      - Інструменти: resources/tools.md
-      - Керівництва: resources/guidelines.md
+  - ОПП:
+      - pages/opp.md
   - Команда:
       - team/index.md
       - Контакти: team/contacts.md
