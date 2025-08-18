@@ -49,8 +49,7 @@ theme:
 # Навігація
 nav:
   - Головна: index.md
-  - ОПП:
-      - pages/opp.md
+  - ОПП: pages/opp.md
   - Команда:
       - team/index.md
       - Контакти: team/contacts.md
