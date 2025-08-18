@@ -1,32 +1,6 @@
-# Добро пожаловати до робочого дашборду
+# Циклова випускова комісія компʼютерної та програмної інженерії
 
-## Швидкий доступ
-
-### 🚀 Поточні проекти
-- [Проект Alpha](projects/project-alpha.md) - Опис проекту
-- [Проект Beta](projects/project-beta.md) - Опис проекту
-- m,m,m,m,m,m,m,kkpkpkp
-
-### :fontawesome-regular-face-laugh-wink: Корисні ресурси
-- [Інструменти команди :fontawesome-solid-download:](resources/tools.md)
-- [Керівництва та стандарти](resources/guidelines.md)
-
-### 👥 Команда
-- [Контактна інформація](team/contacts.md)
-
-## Останні оновлення
-
-!!! info "Оновлення від {{ date }}"
-    Додано нові матеріали по проекту Alpha
-
-## Корисні посилання
-
-- 📊 [Аналітика](https://analytics.example.com)
-- 📝 [Confluence](https://confluence.example.com)
-- 🎯 [Jira](https://jira.example.com)
-
-
-```mermaid
-flowchart TD
-    A --> B
-```
+## 🔗 Постійні посилання в Zoom
+- [Засідання ЦВК :simple-zoom:](https://us02web.zoom.us/j/81550986609?pwd=SlZGSVZXSk1GM1UzelV5RlkrYlNSZz09)
+- [Слухання кваліфікаційних робіт :simple-zoom:](https://us02web.zoom.us/j/8299078669?pwd=cFVaRzZVR2dlbUdleWFWc05MSWJ6Zz09)
+- [Гостьові лекції :simple-zoom:](https://us02web.zoom.us/j/88344902607?pwd=an2zasxOR4lHgtq1P49KQVMCPeURYy.1)
