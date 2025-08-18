@@ -1,5 +1,5 @@
-site_name: Робочий Дашборд Команди
-site_description: Централізоване місце для всіх робочих матеріалів
+site_name: ЦВК КПІ
+site_description: олол
 site_author: Ваше Ім'я
 site_url: https://yourusername.github.io/your-repo-name
 
@@ -11,6 +11,8 @@ repo_url: https://github.com/yourusername/your-repo-name
 theme:
   name: material
   language: uk
+  icon:
+    logo: material/library
   features:
     - navigation.tabs
     - navigation.sections
