@@ -81,11 +81,6 @@ graph TD
     A --> D[Доступ до даних]
     A --> E[(База даних)]
 
-    style A fill:#2C5F7C
-    style B fill:#4A7BA7
-    style C fill:#4A7BA7
-    style D fill:#4A7BA7
-    style E fill:#1A4B5C
 ```
 
 ---
@@ -117,10 +112,6 @@ graph TD
     B --> C[Рівень доступу до даних]
     C --> D[(База даних)]
 
-    style A fill:#2C5F7C
-    style B fill:#2C5F7C
-    style C fill:#2C5F7C
-    style D fill:#1A4B5C
 ```
 
 ---
@@ -161,15 +152,6 @@ graph TD
     E --> H[(БД користувачів)]
     F --> I[(БД продуктів)]
 
-    style A fill:#2C5F7C
-    style B fill:#4A7BA7
-    style C fill:#6B8FC5
-    style D fill:#6B8FC5
-    style E fill:#6B8FC5
-    style F fill:#6B8FC5
-    style G fill:#1A4B5C
-    style H fill:#1A4B5C
-    style I fill:#1A4B5C
 ```
 
 ---
@@ -202,11 +184,6 @@ graph TD
     B -.->|обробка подій| D
     B -.->|обробка подій| E
 
-    style A fill:#2C5F7C
-    style B fill:#4A7BA7
-    style C fill:#6B8FC5
-    style D fill:#6B8FC5
-    style E fill:#6B8FC5
 ```
 
 ---
@@ -244,11 +221,6 @@ graph TD
     C -.->|запити| D
     D -.->|дані| E
 
-    style A fill:#2C5F7C
-    style B fill:#2C5F7C
-    style C fill:#2C5F7C
-    style D fill:#4A7BA7
-    style E fill:#1A4B5C
 ```
 
 ---
@@ -313,13 +285,6 @@ graph TD
     G --> M
     H --> N
 
-    style D fill:#4A7BA7
-    style E fill:#6B8FC5
-    style F fill:#6B8FC5
-    style G fill:#6B8FC5
-    style H fill:#6B8FC5
-    style I fill:#6B8FC5
-    style J fill:#6B8FC5
 ```
 
 ---
@@ -382,3 +347,485 @@ graph TD
 - **Продуктивність** та ефективність використання ресурсів
 
 **Ключове правило:** Починайте просто, ускладнюйте поступово відповідно до потреб бізнесу та технічних вимог.
+
+
+
+# Бази даних. Реляційні бази даних
+
+---
+
+## Вступ до баз даних
+
+---
+
+## База даних (БД)
+
+**База даних (БД)** - це організована структура даних, що зберігається та обробляється в обчислювальних системах. БД створена для задоволення інформаційних потреб користувачів шляхом централізованого управління даними.
+
+### Основні характеристики баз даних:
+
+1. **Інтегрованість** - єдине, централізоване управління даними
+2. **Постійність** - дані зберігаються на постійній основі
+3. **Незалежність даних** - зміна структури не впливає на роботу додатків
+4. **Спільне використання** - одночасний доступ багатьох користувачів
+5. **Цілісність** - забезпечення точності та несуперечності даних
+
+---
+
+## Система управління базами даних (СУБД)
+
+**СУБД** - це комплекс програмного забезпечення, що забезпечує управління створенням, підтримкою та використанням баз даних.
+
+### Основні функції СУБД:
+
+#### 1. Управління даними:
+- Визначення структури даних
+- Маніпулювання даними
+- Контроль цілісності
+
+#### 2. Забезпечення безпеки:
+- Автентифікація користувачів
+- Авторизація доступу
+- Шифрування даних
+
+#### 3. Управління транзакціями:
+- Забезпечення атомарності операцій
+- Відновлення після збоїв
+- Контроль паралельного доступу
+
+#### 4. Оптимізація продуктивності:
+- Індексування даних
+- Оптимізація запитів
+- Кешування
+
+---
+
+## Популярні СУБД
+
+```mermaid
+graph LR
+    A[СУБД] --> B[SQL DATABASES]
+    A --> C[NoSQL DATABASES]
+
+    B --> D[MySQL]
+    B --> E[PostgreSQL]
+    B --> F[SQLite]
+
+    C --> G[MongoDB]
+    C --> H[Cassandra]
+    C --> I[Neo4j]
+```
+
+---
+
+## Причини використання баз даних
+
+### 1. Управління великими обсягами даних
+У сучасному світі організації працюють з величезними обсягами інформації. Без систем управління базами даних ефективно керувати такими об'ємами даних практично неможливо.
+
+### 2. Забезпечення цілісності даних
+Цілісність даних – це їх точність, несуперечливість та надійність протягом усього життєвого циклу.
+
+### 3. Забезпечення паралельного доступу
+У сучасних системах часто необхідно забезпечити одночасну роботу багатьох користувачів з одними й тими ж даними.
+
+### 4. Безпека даних
+Сучасні СУБД надають комплексні механізми для захисту даних.
+
+---
+
+## Класифікація СУБД за моделлю даних
+
+```mermaid
+graph TB
+    A[СУБД] --> B[SQL DATABASES]
+    A --> C[NoSQL DATABASES]
+
+    B --> D[Relational<br/>Реляційні]
+
+    C --> E[Column<br/>Колонкові]
+    C --> F[Graph<br/>Графові]
+    C --> G[Key-Value<br/>Ключ-Значення]
+    C --> H[Document<br/>Документні]
+```
+
+---
+
+## Реляційні бази даних
+
+**Реляційна база даних** - це структурована колекція даних, що організована відповідно до реляційної моделі даних.
+
+### Популярні реляційні СУБД:
+- MySQL
+- PostgreSQL
+- SQLite
+
+---
+
+## Основні поняття реляційної моделі даних
+
+```mermaid
+erDiagram
+    STUDENT {
+        int Roll_Number PK
+        string Name
+        float CGPA
+    }
+```
+
+### Основні компоненти:
+- **Таблиця (відношення)** - структура з рядків і стовпців
+- **Запис (кортеж)** - горизонтальний рядок таблиці
+- **Поле (атрибут)** - вертикальний стовпець таблиці
+- **Первинний ключ (Primary Key)** - унікально ідентифікує кожен запис
+- **Зовнішній ключ (Foreign Key)** - посилається на первинний ключ іншої таблиці
+
+---
+
+## Типи зв'язків
+
+### 1. Один до одного (1:1)
+Кожному запису першої таблиці відповідає один запис другої таблиці
+
+```mermaid
+erDiagram
+    EMPLOYEE {
+        int employee_id PK
+        string first_name
+        string last_name
+        string email
+    }
+
+    PASSPORT {
+        int employee_id PK,FK
+        string passport_number
+        date issue_date
+        date expiry_date
+    }
+
+    EMPLOYEE ||--|| PASSPORT : has
+```
+
+### 2. Один до багатьох (1:N)
+Одному запису першої таблиці відповідає багато записів другої
+
+```mermaid
+erDiagram
+    DEPARTMENT {
+        int department_id PK
+        string name
+        string location
+        string manager_id
+    }
+
+    EMPLOYEE_DEPT {
+        int employee_id PK
+        string first_name
+        string last_name
+        int department_id FK
+        date hire_date
+    }
+
+    DEPARTMENT ||--o{ EMPLOYEE_DEPT : contains
+```
+
+### 3. Багато до багатьох (M:N)
+Реалізується через проміжну таблицю
+
+```mermaid
+erDiagram
+    STUDENT {
+        int student_id PK
+        string first_name
+        string last_name
+        string email
+    }
+
+    COURSE {
+        int course_id PK
+        string name
+        string description
+        int credits
+    }
+
+    STUDENT_COURSE {
+        int student_id PK,FK
+        int course_id PK,FK
+        date enrollment_date
+        string grade
+    }
+
+    STUDENT ||--o{ STUDENT_COURSE : enrolls
+    COURSE ||--o{ STUDENT_COURSE : includes
+```
+
+---
+
+## Приклад комплексної схеми
+
+```mermaid
+erDiagram
+    CUSTOMER {
+        int customer_id PK
+        string name
+        string email
+        string address
+    }
+
+    CATEGORY {
+        int category_id PK
+        string name
+        string description
+    }
+
+    ORDER {
+        int order_id PK
+        int customer_id FK
+        date order_date
+        string status
+        decimal total_amount
+    }
+
+    PRODUCT {
+        int product_id PK
+        string name
+        decimal price
+        int category_id FK
+    }
+
+    ORDER_ITEM {
+        int order_id PK,FK
+        int product_id PK,FK
+        int quantity
+        decimal price
+    }
+
+    CUSTOMER ||--o{ ORDER : places
+    CATEGORY ||--o{ PRODUCT : contains
+    ORDER ||--o{ ORDER_ITEM : contains
+    PRODUCT ||--o{ ORDER_ITEM : "ordered in"
+```
+
+---
+
+## Коли використовувати реляційні бази даних
+
+### Ознаки необхідності використання реляційної БД:
+
+#### 1. Структуровані дані з чіткими зв'язками
+- Банківська система
+- Система управління навчальним закладом
+
+#### 2. Потреба в ACID-транзакціях
+- E-commerce
+- Фінансові операції
+- Бронювання
+
+#### 3. Складні запити та аналітика
+- Звіти
+- Аналітика
+- Агрегація даних
+
+#### 4. Забезпечення цілісності даних
+- Фінансові операції
+- Облік товарів
+- Критичні бізнес-процеси
+
+---
+
+## Переваги використання реляційних БД
+
+### ✅ Надійність
+- Перевірена часом технологія
+- Стабільна робота
+- Передбачувана поведінка
+
+### ✅ Підтримка
+- Велика спільнота
+- Багато інструментів
+- Доступність фахівців
+
+### ✅ Масштабованість
+- Вертикальне масштабування
+- Реплікація
+- Партиціонування
+
+### ✅ Безпека
+- Вбудовані механізми безпеки
+- Контроль доступу
+- Аудит дій
+
+---
+
+## Обмеження та недоліки
+
+### ❌ Коли НЕ використовувати реляційні БД:
+
+#### 1. Жорстка схема даних
+- Складно змінювати структуру
+- Потрібне попереднє проектування
+- Обмежена гнучкість
+
+#### 2. Вертикальне масштабування
+- Обмеження на розмір даних
+- Висока вартість масштабування
+- Складність розподілення
+
+#### 3. Продуктивність
+- Складні JOIN операції
+- Обмеження на кількість з'єднань
+- Витрати на підтримку індексів
+
+### Альтернативи:
+- Великі обсяги неструктурованих даних
+- Потреба в горизонтальному масштабуванні
+- Гнучка схема даних
+
+---
+
+## Мова SQL
+
+**SQL (Structured Query Language)** - це стандартизована мова програмування, призначена для управління даними в реляційних базах даних.
+
+### Основні характеристики SQL:
+- **Декларативна мова** (описуємо ЩО потрібно отримати, а не ЯК)
+- **Не чутлива до регістру** (хоча є конвенції написання)
+- **Базується на реляційній алгебрі**
+- **Підтримує роботу з наборами даних**
+
+### Приклад створення таблиці:
+```sql
+-- Створення таблиці
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY AUTO_INCREMENT,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    email VARCHAR(100) UNIQUE,
+    hire_date DATE DEFAULT CURRENT_DATE,
+    salary DECIMAL(10,2) CHECK (salary > 0),
+    department_id INT,
+    FOREIGN KEY (department_id) REFERENCES departments(department_id)
+);
+```
+
+---
+
+## Приклади SQL запитів
+
+### Вибір з умовами:
+```sql
+-- Вибір з умовами
+SELECT
+    first_name,
+    last_name,
+    salary
+FROM employees
+WHERE salary > 50000
+AND department_id = 2;
+```
+
+### Вставка одного рядка:
+```sql
+-- Вставка одного рядка
+INSERT INTO employees (first_name, last_name, salary)
+VALUES ('John', 'Doe', 50000);
+```
+
+### Вставка кількох рядків:
+```sql
+-- Вставка кількох рядків
+INSERT INTO employees (first_name, last_name, salary)
+VALUES
+    ('Jane', 'Smith', 55000),
+    ('Bob', 'Johnson', 45000);
+```
+
+### Видалення:
+```sql
+-- Просте видалення
+DELETE FROM employees
+WHERE termination_date < '2023-01-01';
+
+-- Видалення з підзапитом
+DELETE FROM employees
+WHERE employee_id IN (
+    SELECT employee_id
+    FROM performance_reviews
+    WHERE rating < 2.0
+);
+```
+
+---
+
+## Приклади взаємодії з реляційною БД
+
+### Архітектура веб-додатку
+
+```mermaid
+sequenceDiagram
+    participant Browser as Браузер
+    participant WebServer as Веб-сервер
+    participant DBMS as СУБД
+    participant DB as База даних
+
+    Browser->>WebServer: GET /users
+    WebServer->>DBMS: SELECT * FROM users
+    DBMS->>DB: Читання даних
+    DB-->>DBMS: Дані користувачів
+    DBMS-->>WebServer: Результат запиту
+    WebServer-->>Browser: JSON з даними
+
+    Browser->>WebServer: POST /users (дані користувача)
+    WebServer->>DBMS: INSERT INTO users
+    DBMS->>DB: Запис даних
+    DB-->>DBMS: Підтвердження
+    DBMS-->>WebServer: ID нового запису
+    WebServer-->>Browser: Успішне створення
+```
+
+### Flask додаток з SQLite
+
+```mermaid
+sequenceDiagram
+    participant Client as Клієнт (браузер)
+    participant Flask as Flask app
+    participant SQLite as SQLite
+    participant ShopDB as shop.db
+
+    Client->>Flask: GET /products
+    Note over Flask: Запит на список товарів
+    Flask->>SQLite: SELECT * FROM products
+    SQLite->>ShopDB: Читання з shop.db
+    ShopDB-->>SQLite: Дані товарів
+    SQLite-->>Flask: Список товарів
+    Flask-->>Client: Render products.html
+
+    Client->>Flask: POST /cart/add/1
+    Note over Flask: Додати товар з id=1
+    Flask->>SQLite: SELECT * FROM products WHERE id = 1
+    SQLite->>ShopDB: Читання
+    ShopDB-->>SQLite: Дані товару
+    SQLite-->>Flask: Товар
+    Note over Flask: Додавання в сесію
+    Flask-->>Client: Redirect to /cart
+```
+
+---
+
+## Висновки
+
+### Реляційні бази даних залишаються:
+- **Основою** для більшості бізнес-додатків
+- **Надійним вибором** для структурованих даних
+- **Стандартом** для транзакційних систем
+
+### Вибирайте реляційні БД, коли:
+- Дані мають чітку структуру
+- Потрібна висока узгодженість
+- Необхідні складні запити
+- Важлива надійність транзакцій
+
+### Розглядайте альтернативи, коли:
+- Потрібне горизонтальне масштабування
+- Дані неструктуровані або часто змінюються
+- Необхідна висока продуктивність читання
