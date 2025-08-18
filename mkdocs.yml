@@ -1,3 +1,5 @@
+# Оновлений mkdocs.yml з автоматичною навігацією
+
 site_name: ЦВК КПІ
 site_description: олол
 site_author: Ваше Ім'я
@@ -15,19 +17,33 @@ theme:
   icon:
     logo: material/robot-confused
   features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.top
+    # ===== ОСНОВНІ ФІЧІ НАВІГАЦІЇ =====
+    - navigation.tabs # Верхні вкладки
+    - navigation.tabs.sticky # Вкладки залишаються при скролі
+    - navigation.sections # Розділи в sidebar
+    - navigation.expand # Автоматично розкривати розділи
+    - navigation.path # Показувати шлях до поточної сторінки
+    - navigation.top # Кнопка "Вгору"
+    - navigation.tracking # Трекінг поточного розділу в URL
+
+    # ===== БІЧНА НАВІГАЦІЯ (SIDEBAR) =====
+    - toc.follow # Слідувати за скролом у змісті
+    - toc.integrate # Інтегрувати зміст в sidebar
+
+    # ===== ПОШУК =====
     - search.highlight
     - search.share
+    - search.suggest # Підказки при пошуку
+
+    # ===== ПЕРЕМИКАЧ ТЕМИ =====
     - palette.toggle
+
   palette:
     # Автоматична тема (слідує системним налаштуванням)
     - media: "(prefers-color-scheme)"
       toggle:
         icon: material/brightness-auto
         name: Перемкнути на світлу тему
-
     # Світла тема
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -36,7 +52,6 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Перемкнути на темну тему
-
     # Темна тема
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
@@ -46,19 +61,35 @@ theme:
         icon: material/brightness-4
         name: Перемкнути на автоматичну тему
 
-# Навігація
+# ===== НАВІГАЦІЯ (можна залишити простою - sidebar згенерується автоматично) =====
 nav:
   - Головна: index.md
-  - ОПП: pages/opp.md
+  - ОПП:
+      - pages/opp/index.md
+      - Документи: pages/opp/documents.md
+      - Процедури: pages/opp/procedures.md
+  - Проекти:
+      - projects/index.md
+      - Поточні: projects/current.md
+      - Завершені: projects/completed.md
   - Команда:
       - team/index.md
       - Контакти: team/contacts.md
+      - Ролі: team/roles.md
+  - Ресурси:
+      - resources/index.md
+      - Шаблони: resources/templates.md
+      - Інструкції: resources/guides.md
 
 # Плагіни
 plugins:
   - search:
       lang: uk
-  - awesome-pages
+  # ===== ПЛАГІН ДЛЯ АВТОМАТИЧНОЇ НАВІГАЦІЇ =====
+  - awesome-pages:
+      filename: .pages
+      collapse_single_pages: false
+      strict: false
 
 # Розширення Markdown
 markdown_extensions:
@@ -77,6 +108,7 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - toc:
       permalink: true
+      toc_depth: 3 # Глибина змісту до 3 рівнів
   - attr_list
   - md_in_html
 
