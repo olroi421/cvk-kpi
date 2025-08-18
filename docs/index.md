@@ -7,7 +7,7 @@
 - [Проект Beta](projects/project-beta.md) - Опис проекту
 - m,m,m,m,m,m,m,kkpkpkp
 
-### 🛠️ Корисні ресурси
+### :fontawesome-regular-face-laugh-wink: Корисні ресурси
 - [Інструменти команди](resources/tools.md)
 - [Керівництва та стандарти](resources/guidelines.md)
 
