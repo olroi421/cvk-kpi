@@ -17,26 +17,13 @@ theme:
   icon:
     logo: material/robot-confused
   features:
-    # ===== ОСНОВНІ ФІЧІ НАВІГАЦІЇ =====
-    - navigation.tabs # Верхні вкладки
-    - navigation.tabs.sticky # Вкладки залишаються при скролі
-    - navigation.sections # Розділи в sidebar
-    - navigation.expand # Автоматично розкривати розділи
-    - navigation.path # Показувати шлях до поточної сторінки
+    # Базові features для простої навігації
     - navigation.top # Кнопка "Вгору"
-    - navigation.tracking # Трекінг поточного розділу в URL
-
-    # ===== БІЧНА НАВІГАЦІЯ (SIDEBAR) =====
-    - toc.follow # Слідувати за скролом у змісті
-    - toc.integrate # Інтегрувати зміст в sidebar
-
-    # ===== ПОШУК =====
-    - search.highlight
-    - search.share
-    - search.suggest # Підказки при пошуку
-
-    # ===== ПЕРЕМИКАЧ ТЕМИ =====
-    - palette.toggle
+    - search.highlight # Підсвічування пошуку
+    - search.share # Поділитися результатами пошуку
+    - search.suggest # Підказки пошуку
+    - palette.toggle # Перемикач теми
+    - toc.follow # Зміст справа слідує за скролом
 
   palette:
     # Автоматична тема (слідує системним налаштуванням)
@@ -70,11 +57,6 @@ nav:
 plugins:
   - search:
       lang: uk
-  # ===== ПЛАГІН ДЛЯ АВТОМАТИЧНОЇ НАВІГАЦІЇ =====
-  - awesome-pages:
-      filename: .pages
-      collapse_single_pages: false
-      strict: false
 
 # Розширення Markdown
 markdown_extensions:
