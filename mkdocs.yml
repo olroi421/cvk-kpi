@@ -24,7 +24,9 @@ theme:
     - search.suggest # Підказки пошуку
     - palette.toggle # Перемикач теми
     - toc.follow # Зміст справа слідує за скролом
-
+    - content.code.copy # Основна функція копіювання
+    - content.code.select # Можливість виділяти код
+    - content.code.annotate # Анотації в коді
   palette:
     # Автоматична тема (слідує системним налаштуванням)
     - media: "(prefers-color-scheme)"
