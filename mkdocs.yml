@@ -1,5 +1,5 @@
-site_name: Бази даних
-site_description: Повний курс з баз даних з лекціями, лабораторними роботами та презентаціями.
+site_name: ЦВК КПІ
+site_description: Циклова випускова комісія компʼютерної та програмної інженерії
 site_author: Олександр Ройко
 site_url: https://olroi421.github.io/cvk-kpi
 
@@ -15,7 +15,7 @@ theme:
   name: material
   language: uk
   icon:
-    logo: fontawesome/solid/database
+    logo: material/robot/confused:
   features:
     - navigation.tabs
     - navigation.sections
