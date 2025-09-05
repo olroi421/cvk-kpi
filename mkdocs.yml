@@ -1,69 +1,74 @@
-# Оновлений mkdocs.yml з автоматичною навігацією
+site_name: Бази даних
+site_description: Повний курс з баз даних з лекціями, лабораторними роботами та презентаціями.
+site_author: Олександр Ройко
+site_url: https://olroi421.github.io/course-bd/
 
-site_name: ЦВК КПІ
-site_description: олол
-site_author: Ваше Ім'я
-site_url: https://yourusername.github.io/your-repo-name
+# Repository
+repo_name: olroi421/course-bd
+repo_url: https://github.com/olroi421/course-bd
+edit_uri: edit/main/docs/
 
-# Репозиторій
-repo_name: yourusername/your-repo-name
-repo_url: https://github.com/yourusername/your-repo-name
+# Copyright
+copyright: Copyright &copy; 2025 Олександр Ройко
 
-# Тема
 theme:
   name: material
-  favicon: material/robot-confused
   language: uk
   icon:
-    logo: material/robot-confused
+    logo: fontawesome/solid/database
   features:
-    # Базові features для простої навігації
-    - navigation.top # Кнопка "Вгору"
-    - search.highlight # Підсвічування пошуку
-    - search.share # Поділитися результатами пошуку
-    - search.suggest # Підказки пошуку
-    - palette.toggle # Перемикач теми
-    - toc.follow # Зміст справа слідує за скролом
-    - content.code.copy # Основна функція копіювання
-    - content.code.select # Можливість виділяти код
-    - content.code.annotate # Анотації в коді
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - content.action.view
+    - content.print
+
   palette:
-    # Автоматична тема (слідує системним налаштуванням)
+    # Автоматична тема (за замовчуванням)
     - media: "(prefers-color-scheme)"
+      scheme: default
+      primary: deep purple
+      accent: deep purple
       toggle:
         icon: material/brightness-auto
         name: Перемкнути на світлу тему
     # Світла тема
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: deep purple
+      accent: deep purple
       toggle:
         icon: material/brightness-7
         name: Перемкнути на темну тему
     # Темна тема
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: deep purple
+      accent: deep purple
       toggle:
         icon: material/brightness-4
         name: Перемкнути на автоматичну тему
 
-# ===== НАВІГАЦІЯ (можна залишити простою - sidebar згенерується автоматично) =====
-nav:
-  - Головна: index.md
-  - ОПП: pages/opp.md
-
-# Плагіни
+# Plugins
 plugins:
   - search:
       lang: uk
+  - mermaid2
 
-# Розширення Markdown
+# Extensions
 markdown_extensions:
-  - admonition
-  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -71,26 +76,43 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
-  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.mark
+  - pymdownx.caret
+  - pymdownx.tilde
+  - pymdownx.keys
+  - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - md_in_html
   - toc:
       permalink: true
-      toc_depth: 3 # Глибина змісту до 3 рівнів
-  - attr_list
-  - md_in_html
 
-# Додаткові CSS/JS
+# Navigation
+nav:
+  - Головна: index.md
+  - Лекції:
+      - lectures/index.md
+      - "Лекція 1. Еволюція систем управління даними": lectures/lecture-01.md
+      - "Лекція 2. Архітектура систем управління базами даних": lectures/lecture-02.md
+      - "Лекція 3. Моделі представлення даних": lectures/lecture-03.md
+  - Лабораторні роботи:
+      - labs/index.md
+      - "Лабораторна робота 1. Робота з СУБД PostgreSQL та основи SQL": labs/lab-01.md
+  - Презентації:
+      - presentations/index.md
+      - "Еволюція систем управління даними": presentations/presentation-01.md
+      - "Архітектура систем управління базами даних": presentations/presentation-02.md
+      - "Моделі представлення даних": presentations/presentation-03.md
+
+# Extra CSS
 extra_css:
   - stylesheets/extra.css
 
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/yourusername
-
-# JavaScript для Mermaid
-extra_javascript:
-  - https://unpkg.com/mermaid@10.6.1/dist/mermaid.min.js
-  - javascripts/mermaid-config.js
+# Extra JavaScript
+extra_js:
+  - javascripts/theme-persistence.js
+  - javascripts/mermaid-zoom.js
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
