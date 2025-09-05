@@ -1,11 +1,11 @@
 site_name: Бази даних
 site_description: Повний курс з баз даних з лекціями, лабораторними роботами та презентаціями.
 site_author: Олександр Ройко
-site_url: https://olroi421.github.io/course-bd/
+site_url: https://olroi421.github.io/cvk-kpi
 
 # Repository
-repo_name: olroi421/course-bd
-repo_url: https://github.com/olroi421/course-bd
+repo_name: olroi421/cvk-kpi
+repo_url: https://github.com/olroi421/cvk-kpi
 edit_uri: edit/main/docs/
 
 # Copyright
