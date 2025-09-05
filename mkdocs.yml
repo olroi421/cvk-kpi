@@ -97,7 +97,6 @@ nav:
       - lectures/index.md
       - "Лекція 1. Еволюція систем управління даними": lectures/lecture-01.md
       - "Лекція 2. Архітектура систем управління базами даних": lectures/lecture-02.md
-      - "Лекція 3. Моделі представлення даних": lectures/lecture-03.md
   - Лабораторні роботи:
       - labs/index.md
       - "Лабораторна робота 1. Робота з СУБД PostgreSQL та основи SQL": labs/lab-01.md
