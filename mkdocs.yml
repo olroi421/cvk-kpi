@@ -15,7 +15,7 @@ theme:
   name: material
   language: uk
   icon:
-    logo: material/robot/confused
+    logo: fontawesome/solid/robot
   features:
     - navigation.tabs
     - navigation.sections
