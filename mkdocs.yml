@@ -93,6 +93,8 @@ markdown_extensions:
 # Navigation
 nav:
   - Головна: index.md
+  - ОПП і НП:
+      - pages/opp.md
   - Лекції:
       - lectures/index.md
       - "Лекція 1. Еволюція систем управління даними": lectures/lecture-01.md
