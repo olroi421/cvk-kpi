@@ -113,6 +113,5 @@ extra_css:
 
 # Extra JavaScript
 extra_js:
-  - javascripts/theme-persistence.js
   - javascripts/mermaid-zoom.js
   - https://unpkg.com/mermaid/dist/mermaid.min.js
