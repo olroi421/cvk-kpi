@@ -36,7 +36,7 @@ theme:
     - media: "(prefers-color-scheme)"
       scheme: default
       primary: black
-      accent: black
+      accent: purple
       toggle:
         icon: material/brightness-auto
         name: Перемкнути на світлу тему
@@ -44,7 +44,7 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: black
-      accent: black
+      accent: purple
       toggle:
         icon: material/brightness-7
         name: Перемкнути на темну тему
@@ -52,7 +52,7 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: black
+      accent: purple
       toggle:
         icon: material/brightness-4
         name: Перемкнути на автоматичну тему
