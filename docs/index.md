@@ -3,7 +3,8 @@
 ## 🔥 Завдання, які потрібно зробити зараз
 
 
-- [ ] :fontawesome-solid-door-open: зробити і здати робочі програми - :fontawesome-regular-alarm-clock:{ .color-red } **дедлайн 2025-09-29**
+- [ ] :fontawesome-solid-door-open: зробити і здати робочі програми -
+:fontawesome-regular-alarm-clock:{ .colorred } **дедлайн 2025-09-29**
 
 !!! danger "asdfasdfasdf"
     по програмах
