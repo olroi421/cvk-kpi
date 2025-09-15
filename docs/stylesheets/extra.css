@@ -1,3 +1,11 @@
-.colorred {
+.color-red {
     color: indianred;
+}
+
+.color-green {
+    color: mediumseagreen;
+}
+
+.color-blue {
+    color: steelblue;
 }
