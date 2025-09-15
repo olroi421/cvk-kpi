@@ -93,20 +93,8 @@ markdown_extensions:
 # Navigation
 nav:
   - Головна: index.md
-  - ОПП і НП:
+  - ОПП-НП-РП-Н:
       - pages/opp.md
-  - Лекції:
-      - lectures/index.md
-      - "Лекція 1. Еволюція систем управління даними": lectures/lecture-01.md
-      - "Лекція 2. Архітектура систем управління базами даних": lectures/lecture-02.md
-  - Лабораторні роботи:
-      - labs/index.md
-      - "Лабораторна робота 1. Робота з СУБД PostgreSQL та основи SQL": labs/lab-01.md
-  - Презентації:
-      - presentations/index.md
-      - "Еволюція систем управління даними": presentations/presentation-01.md
-      - "Архітектура систем управління базами даних": presentations/presentation-02.md
-      - "Моделі представлення даних": presentations/presentation-03.md
 
 # Extra CSS
 extra_css:
