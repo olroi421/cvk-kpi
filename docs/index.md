@@ -19,11 +19,11 @@
     * зверніть увагу, що в ОПП 2025 ІПЗ додано по дві СК і РН, відповідно змінились матриці
     * все інше без змін
 
-- [x] :fontawesome-solid-arrow-right-from-file:{ .color-green } заповнити свою частину плану роботи ЦВК
+- [x] :fontawesome-solid-arrow-right-from-file:{ .color-green } заповнити відкриті заняття в плані роботи ЦВК - :fontawesome-regular-alarm-clock:{ .color-red } **дедлайн 2025-09-29**
 - [x] :fontawesome-solid-arrow-right-from-file:{ .color-green } заповнити теми кваліфікаційних робіт - :fontawesome-regular-alarm-clock:{ .color-red } **дедлайн 2025-09-29**
 - [x] :fontawesome-solid-door-open:{ .color-blue } принести ОЮ 2 екземпляри тем курсових робіт (*затверджено протокол від 30.09.2025 №2*) - :fontawesome-regular-alarm-clock:{ .color-red } **дедлайн 2025-09-29**
 
 ## :fontawesome-solid-file-lines: Для роботи
 
 - [ОПП, навчальні плани, робочі плани, навантаження](pages/opp.md)
-- [Графік засідань, протоколи засідань і план роботи ЦВК](#)
+- [Графік засідань, протоколи засідань і план роботи ЦВК](pages/prot.md)
