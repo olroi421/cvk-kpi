@@ -17,7 +17,7 @@
 ### 3-й курс
 
 * [:fontawesome-solid-file-code: Інженерія програмного забезпечення (ОПП 2024)](https://drive.google.com/drive/folders/1zFyAzRbfrRrOILO5LFOuPX9nWfuN8vvE)
-* [:fontawesome-solid-microchip: Комп'ютерна інженерія (ОПП 2024)](https://drive.google.com/drive/folders/1wxKbKTMKqVM-4LlkZ4GNSC68TSfL7nNN?usp=share_link)
+* [:fontawesome-solid-microchip: Комп'ютерна інженерія (ОПП 2024)](https://drive.google.com/drive/folders/17LSZxjK7ueoPUBXvYer6RmQNOIpa4iPC)
 
 ### 4-й курс
 

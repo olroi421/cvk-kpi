@@ -94,8 +94,7 @@ markdown_extensions:
 # Navigation
 nav:
   - Головна: index.md
-  - ОПП-НП-РП-Н:
-      - pages/opp.md
+  - ОПП-НП-РП-Н: pages/opp.md
 
 # Extra CSS
 extra_css:
