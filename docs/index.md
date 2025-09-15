@@ -5,7 +5,7 @@
 
 - [ ] :fontawesome-solid-door-open: зробити і здати робочі програми - :fontawesome-regular-alarm-clock:{ .color-red } **дедлайн 2025-09-29**
 
-!!!alert asdfasdfasdf
+!!! danger asdfasdfasdf
     по програмах
     фвіафіва
 
